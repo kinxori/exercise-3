@@ -1,0 +1,68 @@
+html, 
+body{
+    margin: 0;
+    height: 100%;
+}
+.whole {
+    position: relative;
+    background-color: hsl(0, 0%, 0%, .5);
+    height: 100%;
+}
+.background{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.hero {
+    min-height: 80%;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content > img{
+    max-width: 24%;
+    padding-left: 10px;
+    margin: 20px;
+}
+.copy {
+    font-family: avenir next condensed;
+    width: 400px;
+    color: white;
+    margin: 0;
+    padding: 24px;
+    text-align: left;
+}
+.copy h1{
+    font-size: 55px;
+    margin: 0;
+    line-height: 90%;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.copy p{
+    width: 100%;
+    margin: 0;
+    padding-top: 16px;
+    font-size: 20px;
+}
+.hero button{
+    font-size: 24px;
+    border-radius: 9px;
+    border: none;
+    padding: 10px 20px;
+    margin: 48px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hero button:hover{
+    transform: scale(1.1);
+}
